@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1159742623058015');
+  fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1159742623058015&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  body {
+    background: #eff9f3 !important;
+  }
+
+  .demo-page {
+    width: 100% !important;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    color: #101b16;
+  }
+
+  .demo-card {
+    width: 100%;
+    max-width: 580px;
+    background: #fff;
+    border: 1px solid #d9e8df;
+    border-radius: 25px;
+    padding: 32px 28px;
+    text-align: center;
+    box-shadow: 0 10px 30px #174b2910;
+  }
+
+  .demo-badge {
+    display: inline-block;
+    background: #e9f6ee;
+    color: #217747;
+    border-radius: 30px;
+    padding: 9px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+
+  .demo-card h1 {
+    font-size: 31px;
+    margin: 25px 0 12px;
+  }
+
+  .demo-subtitle {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #65756d;
+    margin-bottom: 26px;
+  }
+
+  .demo-btn {
+    width: 100%;
+    min-height: 70px;
+    border: none;
+    border-radius: 18px;
+    background: #209b53;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 23px;
+    cursor: pointer;
+    transition: background .2s, opacity .2s;
+  }
+
+  .demo-notice {
+    color: #65756d;
+    font-size: 12px;
+    margin-top: 17px;
+  }
+
+  @media (max-width: 600px) {
+    .demo-page {
+      padding: 14px;
+    }
+
+    .demo-card {
+      width: 100%;
+      max-width: 100%;
+      padding: 30px 21px;
+      border-radius: 23px;
+    }
+
+    .demo-card h1 {
+      font-size: 29px;
+      margin: 24px 0 12px;
+    }
+
+    .demo-subtitle {
+      font-size: 17px;
+      margin-bottom: 24px;
+    }
+
+    .demo-btn {
+      min-height: 66px;
+      font-size: 21px;
+      padding: 16px 20px;
+    }
+  }
+  </style>
+</head>
+
+<body>
+
+  <div class="demo-page">
+    <div class="demo-card">
+
+      <div class="demo-badge">● DEMO CHECK</div>
+
+      <h1>Confirm to continue</h1>
+
+      <p class="demo-subtitle">
+        Tap the Continue button below to Proceed.
+      </p>
+
+      <button class="demo-btn" id="demoContinue" type="button">
+        <span>Continue Here</span>
+        <span>➜</span>
+      </button>
+
+      <p class="demo-notice">Click continue to proceed.</p>
+
+    </div>
+  </div>
+
+  <script>
+  (function() {
+
+    const button = document.getElementById("demoContinue");
+
+    const destination =
+      "https://texy3.github.io/ruto/wedding-celebbration-giveaway.html";
+
+    function resetButton() {
+      button.disabled = false;
+      button.innerHTML =
+        '<span>Continue Here</span><span>➜</span>';
+      button.classList.remove("loading");
+    }
+
+    window.addEventListener("pageshow", resetButton);
+
+    button.addEventListener("click", function() {
+      window.location.href = destination;
+    });
+
+  })();
+  </script>
+
+</body>
+</html>
